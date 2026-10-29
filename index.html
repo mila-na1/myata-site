@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мята — кофейня</title>
+  
+<style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #6B493B;
+      color: #4A3428;
+    }
+
+    header {
+      padding: 24px 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #B99A7C; 
+    }
+
+    .logo {
+      font-size: 25px;
+      font-weight: bold;
+      letter-spacing: 3px;
+    }
+
+    nav a {
+      color: #26352b;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    .hero {
+      min-height: 500px;
+      padding: 70px 8%;
+      display: flex;
+      align-items: center;
+      background: #B99A7C;
+    }
+
+    .hero-content {
+      max-width: 540px;
+    }
+
+    .tag {
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(44px, 7vw, 76px);
+      font-weight: normal;
+      margin: 20px 0;
+    }
+
+    .hero p {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 15px 25px;
+      background: #A78365;
+      color: 4A3428
+      text-decoration: none;
+      border-radius: 3px;
+    color: #4A3428;}
+
+    section {
+      padding: 60px 8%;
+    }
+
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 38px;
+      font-weight: normal;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      padding: 25px;
+      background: #B99A7C;
+      border-radius: 8px;
+    }
+
+    .item h3 {
+      margin-top: 0;
+    }
+
+    .price {
+      color: #657b5f;
+      font-weight: bold;
+    }
+
+    footer {
+      padding: 30px 8%;
+      background: #A78365
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        align-items: flex-start;
+        gap: 15px;
+        flex-direction: column;
+      }
+
+      nav a {
+        margin: 0 12px 0 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">МЯТА.</div>
+    <nav>
+      <a href="#about">О нас</a>
+      <a href="#menu">Меню</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero" id="about">
+      <div class="hero-content">
+        <div class="tag">Твоя новая любимая кофейня</div>
+        <h1>Время для себя.</h1>
+        <p>Ароматный кофе, свежая выпечка и уютная атмосфера. Иногда счастье — это просто хорошая чашка кофе.</p>
+        <a class="button" href="#menu">Посмотреть меню</a>
+      </div>
+    </div>
+
+    <section id="menu">
+      <p class="tag">С любовью к кофе</p>
+      <h2>Наше меню</h2>
+      <div class="menu">
+        <div class="item">
+          <h3>Капучино</h3>
+          <img src="images/coffee.jpg.webp" alt="Капучино с молочной пеной" width="200">
+          <p>Эспрессо и нежная молочная пена.</p>
+          <div class="price">220 ₽</div>
+        </div>
+        <div class="item">
+          <h3>Латте</h3>
+          <img src="images/latte.webp" alt="Чашка латте" width="200">
+          <p>Мягкий вкус кофе и молока.</p>
+          <div class="price">250 ₽</div>
+        </div>
+        <div class="item">
+          <h3>Круассан</h3>
+          <img src="images/croissant.jpg" alt="Свежий круассан" width="200">
+          <p>Свежая хрустящая выпечка.</p>
+          <div class="price">180 ₽</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacts">
+      <h2>Заглядывай в гости</h2>
+      <p>Каждый день с 8:00 до 21:00</p>
+      <p>Адрес: укажем, когда придумаем город для нашего кафе</p>
+    </section>
+  </main>
+
+  <footer>МЯТА. — место, где хорошо</footer>
+</body>
+</html>
